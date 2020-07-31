@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="quiz-container box-shadow">
+        <div class="quiz-title">Maths Quiz</div>
+        <div class="question-time">
+            <span class="question-numbers"></span>
+            <span class="count-down-time">00:40</span>
+            <div>
+                <span class="dark-light"><em>Dark Theme</em></span>
+                <span class="theme-box disabled">
+                    <span class="theme-slide"></span>
+                </span>
+            </div>
+            
+        </div>
+        <div class="questions">
+            <h2>Question <span class="current-question-number"></span></h2>
+            <div class="current-question">
+                <p class="question">Find the square root of 169</p>
+                <div class="current-question-options">
+                    <span class="option">11</span>
+                    <span class="option">15</span>
+                    <span class="option">12</span>
+                    <span class="option">13</span>
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            
+        </div>
+        <div class="preview-questions"></div>
+        <div class="questions-slide">
+            <button class="previous-question">Previous</button>
+            <button class="next-question">Next</button>
+            <button class="submit">Submit</button>
+            <button class="preview">Preview</button>
+
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

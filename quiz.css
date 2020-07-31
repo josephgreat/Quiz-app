@@ -1,0 +1,129 @@
+*{
+  font-family: bookman old style;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(45deg, azure, transparent);
+  min-height: 100vh;
+  overflow: hidden;
+  color: #222;
+  transition: all 0.8s ease;
+}
+.quiz-container{
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  margin: 100px auto;
+  transition: all 0.8s ease;
+
+}
+.box-shadow{
+  box-shadow: 3px 6px 8px 8px #555;
+}
+.quiz-title{
+  font-size: 2rem;
+  text-align: center;
+  background-color: orangered;
+  border-radius: 40%;
+  padding: 10px;
+}
+.question-time{
+  display: flex;
+  justify-content: space-between
+}
+.result{
+  display: none;
+}
+.questions{
+  padding: 20px;
+  
+}
+.questions h2, .result h2{
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.questions .current-question p{
+  font-size: 18px
+}
+.questions .current-question .current-question-options{
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.questions .current-question .current-question-options .option{
+  background-color: dodgerblue;
+  width: 150px;
+  padding: 5px 20px;
+  margin: 20px;
+  flex-basis: 1;
+  text-align: center;
+  border-radius: 20px; 
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.questions .current-question .current-question-options .option:hover{
+  opacity: 0.5;
+}
+.questions-slide{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.questions-slide button{
+  padding: 4px 25px;
+  background-color: #DA4911;
+  border: none;
+  color: #eee;
+  margin: 0 5px; 
+  outline: none;
+  transition: all 0.8s ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.questions-slide button:hover{
+  background-color: #eee;
+  color: #DA4911;
+} 
+
+.questions-slide .submit{
+  display: none;
+}
+.preview-questions{
+  display: none;
+}
+.preview{
+  display: none;
+}
+.answer{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.theme-box{
+  width: 40px;
+  padding: 8px 0;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  position: relative;
+  transition: all 1s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+.theme-slide{
+  position: absolute;
+  left: 0;
+  transition: all 1s ease;
+  width: 15px;
+  padding: 7px 0;
+  margin-left: 2px;
+  top: 0.5px;
+  border-radius: 50%;
+  background-color: #aaa;
+
+}
+.disabled{
+  background-color: #333;   
+}
